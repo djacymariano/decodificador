@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Decodificador</title>
+</head>
+<body>
+    <header>
+        <img class="logo__imagem" src="./assets/logoalura.png" alt="Foto logo Alura">
+        <!--<h1 class="menscodificada">Mensagens Codificadas.</h1>-->
+    </header>
+    <main>
+        <section>
+            <textarea class="texto-digita"  cols="41" rows="4" placeholder="Digite seu texto"></textarea>
+        <div>
+            <img class="informacao" src="./assets/informacao.png" alt="imagem informacao">
+        </div>
+        <div class="botoes">
+            <button class="bt-criptografar" onclick="btencriptar()">Criptografar</button>
+            <button class="bt-descriptografar" onclick="btdesencriptar()">Descriptografar</button>
+        </div>
+    </section>
+    
+    <section>
+        <textarea class="mensagem"  cols="20" rows="10"></textarea>
+        <h2 class="nenhumamens">Nenhuma mensagem encontrada</h2>
+        <h3 class="menscodificada">Digite um texto que você deseja criptografar ou descriptografar.</h3>
+        <button class="bt-copiar" onclick="btcopiartexto()">Copiar</button>
+    </section>
+    </main>
+    <script src="app.js"></script>
+    
+    <footer class="rodape">
+       <p>Desenvolvido por Djacy &copy; 2024</p>
+    </footer>
+</body>
+</html>
